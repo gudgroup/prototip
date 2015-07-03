@@ -196,10 +196,10 @@ public class Panel extends JPanel{
             ActivRibs = new boolean[sizearr][sizearr];
             for (int j = 0; j < sizearr; j++) {
                 tt = temp[i][j];
-                temp[i][j] = Math.min(temp[i][j], temp[i][move] + temp[move][j]);
                 if(temp[i][j] < 9999 && (temp[i][move] + temp[move][j]) < 9999){
                     log.append("Ищем минимум (" + temp[i][j] + "," + (temp[i][move] + temp[move][j]) + ")\n");
                 }
+                temp[i][j] = Math.min(temp[i][j], temp[i][move] + temp[move][j]);
                 if(tt != temp[i][j]){
                     log.append("Найден оптимальный путь от вершины " + (i+1) + " до " + (j+1) + " = " + temp[i][j] + "\n");
                     ActivRibs[i][move]=true;
