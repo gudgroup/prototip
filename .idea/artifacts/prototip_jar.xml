@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="prototip:jar">
+    <output-path>$USER_HOME$/java_pr/prototip_jar</output-path>
+    <root id="archive" name="prototip.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/java_pr/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="prototip" />
+    </root>
+  </artifact>
+</component>
